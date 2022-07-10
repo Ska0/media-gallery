@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  background-color: hsl(213, 69%, 6%);
+  color: antiquewhite;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: right; */
+  /* padding: 10px; */
+  gap: 50px;
+}
+
+.section-header {
+  font-size: 2em;
+  font-weight: bold;
+  color: hsl(291, 6%, 60%);
+}
+
+.content {
+
+}
+
+.form-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  min-width: 250px;
+  height: 23px;
+}
+
+.form-group {
+  padding: 5px;
+}
+
+.logout {
+  padding: 5px;
+  background-color: hwb(0 89% 11%);
+  /* margin-top: 10px; */
+}
+
+.text-input-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hsl(291, 6%, 60%);
+}
+
+form {
+  height: 200px;
+  width: 400px;
+  /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+#journal-title {
+  width: 100%;
+  padding: 5px;
+}
+
+.create-journal-btn {
+  padding: 12px;
+  width: 100%;
+  background-color: hwb(0 89% 11%);
+  /* margin-top: 10px; */
+}
+.journals {
+  height: 60vh;
+  display: flex;
+  width: 40vw;
+  flex-flow: column;
+}
+.journal { 
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 450px; */
+  height: 150px;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+  background-color: hsl(206, 27%, 40%);
+  border-radius: 2px;
+  /* gap: 100px; */
+}
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+h2 {
+  margin-top: -5px;
+}
+/* button {
+  border-radius: 2px;
+  margin-left: auto;
+}
+button, h2 {
+  padding: 10px;
+  background-color: hwb(0 89% 11%);
+align-self: flex-start; margin-top: 10px;
+} */
+
+.timestamp {
+  margin-top: auto;
+}
+
+.close {
+  padding: 5px;
+  background-color: hwb(0 89% 11%);
+  border-radius: 5px;
+  height: 35px;
+}
